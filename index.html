@@ -7,17 +7,18 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/home.css">
     <script src="js/home.js"></script>
+    
 </head>
 <body>
 
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">TABLE <br>& <br>MENU</button>
-      <button class="tablinks" onclick="openTab(event, 'History')">HISTORY</button>
-      <button class="tablinks" onclick="openTab(event, 'Finance')">FINANCE</button>
+      <a onclick="openTab()" class="tablink"><div id="text">TABLE NO<br>& <br>MENU</div> </a>
+      <a onclick="openTab()"class="tablink"> <div  id="text">HISTORY</div></a>
+      <a onclick="openTab()"class="tablink"><div  id="text">FINANCE</div></a>
     </div>
     
-    <div id="Home" class="tabcontent">
-      This Is Home
+    <div id="home" class="tabcontent">
+      <h1>Welcome to my System</h1>
     </div>
     <!--
       <div id="History" class="tabcontent">
