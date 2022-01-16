@@ -12,13 +12,19 @@
 <body>
 
     <div class="tab">
-      <a onclick="openTab()" class="tablink"><div id="text">TABLE NO<br>& <br>MENU</div> </a>
-      <a onclick="openTab()"class="tablink"> <div  id="text">HISTORY</div></a>
-      <a onclick="openTab()"class="tablink"><div  id="text">FINANCE</div></a>
+        <a  onclick="openTab(event, 'Home')" id="defaultOpen"><div id="text">TABLE NO<br>& <br>MENU</div> </a>
+        <a onclick="openTab(event, 'History')"> <div  id="text">HISTORY</div></a>
+        <a class="tablinks" onclick="openTab(event, 'Finance')"><div  id="text">FINANCE</div></a>
     </div>
     
     <div id="home" class="tabcontent">
-      <h1>Welcome to my System</h1>
+        <h1>Welcome to my System</h1>
+    </div>
+    <div id="History" class="tabcontent">
+        <h1></h1>
+    </div>
+    <div id="Finance" class="tabcontent">
+        <h1></h1>
     </div>
     <!--
       <div id="History" class="tabcontent">
