@@ -4,38 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Coffee</title>
     <link rel="stylesheet" href="css/home.css">
     <script src="js/home.js"></script>
-    
 </head>
 <body>
+    <!--start nav-bar -->
+        <div class="nav_bar">
+            
+                
+                    <a href="index.html">Table & Menu</a>
+                    <a href="pages/editmenu.html">Edit Menu</a>
+                    <a href="pages/history.html">History</a>
+                    <a href="pages/finance.html">Finance</a>
+                
+            
+        </div>
+    <!--add table no-->
+        <div class="addContect" id="tableform">
+            <form>
+                <label for="fTable_no" class="lable">Enter Table Number</label>
+                <input type="number"  name="tableno" class="table_nobox" id="tableno" min="1" max="20">
+                <button type="button" class="table_summit" onclick="table_NO()">Add Menu Item</button>
+            </form>
+               
+            
+        </div>
+    
+    <!--menu sheet-->
+        <div class=" menu_table" id="menu">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="number">
+                            No
+                        </td>
+                        <td>
+                            Item Name
+                        </td>
+                        <td>
+                            Price
+                        </td>
+                       
+                    </tr>
 
-    <div class="tab">
-        <a  onclick="openTab(event, 'Home')" id="defaultOpen"><div id="text">TABLE NO<br>& <br>MENU</div> </a>
-        <a onclick="openTab(event, 'History')"> <div  id="text">HISTORY</div></a>
-        <a class="tablinks" onclick="openTab(event, 'Finance')"><div  id="text">FINANCE</div></a>
-    </div>
-    
-    <div id="home" class="tabcontent">
-        <h1>Welcome to my System</h1>
-    </div>
-    <div id="History" class="tabcontent">
-        <h1></h1>
-    </div>
-    <div id="Finance" class="tabcontent">
-        <h1></h1>
-    </div>
-    <!--
-      <div id="History" class="tabcontent">
-        This Is History
-      </div>
-      
-      <div id="Finance" class="tabcontent">
-        This Is Finance
-      </div>
-    -->
-    
-       
-    </body>
-    </html>
+                    <tr>
+                        <td class="number">
+                            1
+                        </td>
+                        <td>
+                            Normal coffee
+                        </td>
+                        <td>
+                            1000
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="number">
+                            2
+                        </td>
+                        <td>
+                            Esspresso
+                        </td>
+                        <td>
+                            1500
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td class="number">
+                            3
+                        </td>
+                        <td>
+                            Capacino
+                        </td>
+                        <td>
+                            1500
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="number">
+                            4
+                        </td>
+                        <td>
+                            Americano
+                        </td>
+                        <td>
+                            1500
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="number">
+                            5
+                        </td>
+                        <td>
+                            Ice Coffee
+                        </td>
+                        <td>
+                            2000
+                        </td>
+                        
+                    </tr>
+
+                </thead>
+            </table>
+        </div>        
+
+</body>
+</html>
